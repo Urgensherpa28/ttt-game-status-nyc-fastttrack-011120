@@ -39,13 +39,8 @@ def full?(board)
   return full_board
 end
 
-# # Returns true if every element in the board contains either an "X" or an "O"
-# def full?(board)
-#   board_is_full = board.all? do |space|
-#     space == "X" || space == "O"
-#   end
-#   return board_is_full
-# end
+
+
 
 # # BROKEN but should be working according to js_tester.rb
 # def draw?(board)
