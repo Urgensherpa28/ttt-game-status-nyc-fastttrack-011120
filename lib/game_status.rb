@@ -57,15 +57,15 @@ def over?(board)
   end
 end
 
-def winner(board)
-  win = won?(board)
+# def winner(board)
+#   win = won?(board)
   
-  if !won(board)
-    return nil
-  end
+#   if !won(board)
+#     return nil
+#   end
 
-  return board[win[0]]
-end
+#   return board[win[0]]
+# end
 
 def winner(board)
   win = won?(board)
