@@ -31,20 +31,7 @@ def won?(board)
   return false
 end
   
+
+def full?(board)
   
-  
-#   if board[top_row_win[0]] == "X" && board[top_row_win[1]] == "X" && board[top_row_win[2]] == "X"
-#     top_row_win
-#   elsif
-#     board[sec_row_win[0]] == "X" && board[sec_row_win[1]] == "X" && board[sec_row_win[2]] == "X"
-#     sec_row_win
-#   elsif
-#     board[third_row_win[0]] == "X" && board[third_row_win[1]] == "X" && board[third_row_win[2]] == "X"
-#     third_row_win
-#   elsif
-#     board[left_col_win[0]] == "X" && board[left_col_win[1]] == "X" && board[left_col_win[2]] == "X"
-#     left_col_win
-#   end
-# end
- 
- 
+end
