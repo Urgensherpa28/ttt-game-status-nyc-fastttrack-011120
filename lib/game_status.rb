@@ -39,8 +39,15 @@ def full?(board)
   return full_board
 end
 
-
-
+def draw?(board)
+  if won?(board) 
+    false
+  elsif
+    true
+  else
+    false
+  end
+end
 
 # # BROKEN but should be working according to js_tester.rb
 # def draw?(board)
