@@ -64,6 +64,20 @@ def winner(board)
     return nil
   end
 
-return board[win[0]]
+  return board[win[0]]
 end
 
+def winner(board)
+  win = won?(board)
+
+  # puts win.to_s # DEBUG
+  # puts board[win[0]] # DEBUG
+
+  # returns nil if no winner
+  if !won?(board)
+    return nil
+  end
+
+  return board[win[0]]
+
+end
