@@ -36,6 +36,7 @@ def full?(board)
   full_board = board.all? do |space|
     space == "X" || space == "O"
   end
+  return full_board
 end
 
 # # Returns true if every element in the board contains either an "X" or an "O"
