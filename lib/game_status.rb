@@ -49,16 +49,13 @@ def draw?(board)
   end
 end
 
-# # # BROKEN but should be working according to js_tester.rb
-# def draw?(board)
-#   if won?(board) # BROKEN! If #won? returns an array, return false
-#     false
-#   elsif !won?(board) && full?(board) # Draw conditions: No win and full board
-#     true
-#   else
-#     false
-#   end
-# end
+def over?(board)
+  if won?(board) || draw?(board) || full?(board)
+    true
+  else
+    false
+  end
+end
 
 # # BROKEN definitely broken
 # def over?(board)
