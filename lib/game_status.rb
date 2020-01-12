@@ -57,26 +57,25 @@ def over?(board)
   end
 end
 
-# # BROKEN definitely broken
-# def over?(board)
-#   if won?(board) || draw?(board) || full?(board)
-#     true
-#   else
-#     false
-#   end
-# end
+def winner(board)
+  win = won?(board)
+  
+  puts win.to_s 
+  puts board[win[0]]
+  
+end
 
-# def winner(board)
-#   win = won?(board)
+def winner(board)
+  win = won?(board)
 
-#   # puts win.to_s # DEBUG
-#   # puts board[win[0]] # DEBUG
+  # puts win.to_s # DEBUG
+  # puts board[win[0]] # DEBUG
 
-#   # returns nil if no winner
-#   if !won?(board)
-#     return nil
-#   end
+  # returns nil if no winner
+  if !won?(board)
+    return nil
+  end
 
-#   return board[win[0]]
+  return board[win[0]]
 
-# end
+end
